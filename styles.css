@@ -50,7 +50,7 @@ details.alltools[open]>summary::after{content:"▴";color:var(--accent-text)}
 .ic.solid{fill:currentColor;stroke:none}
 
 .guide{display:grid;grid-template-columns:233px minmax(0,1fr);gap:34px;align-items:start}
-.guide nav{display:flex;flex-direction:column;border-top:1px solid var(--ink)}
+.guide nav{display:flex;flex-direction:column;border-top:1px solid var(--ink);position:sticky;top:13px}
 .guide nav a{padding:8px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:var(--t-cap)}
 .guide section{max-width:610px;display:flex;flex-direction:column;gap:8px;margin-bottom:34px;scroll-margin-top:21px}
 .guide h2{margin:0;font-size:var(--t-area);font-weight:600}
@@ -87,7 +87,7 @@ details.alltools[open]>summary::after{content:"▴";color:var(--accent-text)}
 /* phones: hang the All WOODWERD tools menu from the full-width strip, so it can't run off the left edge */
 @media (max-width:767px){details.alltools,details.kitmenu{position:static}.toolmenu{left:0;right:0;width:auto;max-width:none}}
 @media (max-width:640px){.guide .tbl th{white-space:normal}}
-@media (max-width:820px){.guide{grid-template-columns:minmax(0,1fr)}.foot{padding-inline:0}}
+@media (max-width:820px){.guide{grid-template-columns:minmax(0,1fr)}.guide nav{position:static}.foot{padding-inline:0}}
 
 /* this site only */
 .guide code{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:.92em}
