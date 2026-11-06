@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Set up GitHub · WOODWERD Toolkit Guides</title>
+<meta name="description" content="Step by step: one private GitHub repo and one token for the WOODWERD tools, even if you've never used GitHub.">
+<meta name="theme-color" content="#141311">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem("woodwerd.theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div class="bench">
+<!--STRIP-->
+
+<header class="top">
+  <div class="brand">
+    <h1>Toolkit Guides</h1>
+    <span class="by">Set up GitHub</span>
+    <span class="by mono">· x0.0.1</span>
+  </div>
+  <div class="leds">
+    <a href="./" class="guidelink">All guides</a>
+    <!--THEME-->
+  </div>
+</header>
+
+<div class="guide">
+  <nav aria-label="Setup steps">
+    <a href="#why">Why do this</a>
+    <a href="#how">How it fits together</a>
+    <a href="#tools">Which tools use it</a>
+    <a href="#need">What you need</a>
+    <a href="#account">1. A GitHub account</a>
+    <a href="#repo">2. Your private repo</a>
+    <a href="#token">3. Your token</a>
+    <a href="#connect">4. Connect a tool</a>
+    <a href="#phone">Phones</a>
+    <a href="#more">More devices</a>
+    <a href="#fix">If something goes wrong</a>
+    <a href="#words">Words used here</a>
+    <a href="#privacy">Privacy</a>
+  </nav>
+  <div>
+    <section id="why"><h2>Why do this</h2>
+      <p>The WOODWERD tools keep your work in the browser you use them in. That's simple, but a browser can lose it: clearing your history, a new computer, or Safari tidying up after a week away can wipe it. And what's on the Mac isn't on the iPad.</p>
+      <p>Connect a GitHub repo of your own once and:</p>
+      <ul class="plain">
+        <li><b>Your work is safe.</b> A copy lives on GitHub, not just in one browser.</li>
+        <li><b>Every device has the same copy.</b> Change something on the Mac and it's on the iPad a moment later.</li>
+        <li><b>Nothing is ever really lost.</b> GitHub keeps every earlier version, so a mistake can be undone.</li>
+        <li><b>It's yours.</b> The repo is in your own GitHub account. WOODWERD never sees it, and there's nothing to pay.</li>
+      </ul>
+      <p>It's optional. Every tool works without it. Setting it up takes about 10 minutes, once.</p>
+    </section>
+
+    <section id="how"><h2>How it fits together</h2>
+      <figure class="fig">
+        <svg viewBox="0 0 640 250" role="img" aria-label="Your computer, iPad and phone each sync with one private repo on GitHub, which holds one file for each tool you connect, and a README.">
+          <g fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="20" y="20" width="150" height="54" rx="8"/><rect x="20" y="98" width="150" height="54" rx="8"/><rect x="20" y="176" width="150" height="54" rx="8"/>
+            <rect x="380" y="40" width="240" height="170" rx="13"/>
+            <path d="M170 47 L380 100 M170 125 L380 125 M170 203 L380 150" stroke-dasharray="5 5"/>
+          </g>
+          <g fill="currentColor" font-family="Inter, Arial, sans-serif" font-size="14">
+            <text x="36" y="52">Computer</text><text x="36" y="130">iPad</text><text x="36" y="208">Phone</text>
+            <text x="400" y="70" font-weight="600">Your private repo on GitHub</text>
+          </g>
+          <g fill="currentColor" font-family="JetBrains Mono, Menlo, monospace" font-size="13">
+            <text x="400" y="110">a-tool.json</text><text x="400" y="138">another-tool.json</text><text x="400" y="166">…</text><text x="400" y="194">README.md</text>
+          </g>
+          <g fill="var(--accent-text)" font-family="Inter, Arial, sans-serif" font-size="12"><text x="232" y="116">sync</text></g>
+        </svg>
+        <figcaption class="small">One repo holds everything. Each tool writes its own files and never touches the others.</figcaption>
+      </figure>
+      <p>A <b>repo</b> is a folder on GitHub. You make <b>one</b>, and every tool you connect keeps its own file in it. You don't need a repo for each tool.</p>
+      <p>A <b>token</b> is a long password that lets a tool write to that one folder and nothing else in your account. You make <b>one</b>, and every tool can use it.</p>
+      <p>After that, each browser you use connects once. From then on, saving to GitHub happens by itself.</p>
+    </section>
+
+    <section id="tools"><h2>Which tools use it</h2>
+      <p>Each tool's own guide says what it keeps in the repo and where its Connect button is.</p>
+      <table class="tbl">
+        <tr><th scope="row"><a href="https://woodwerd.github.io/box-ctrl/guide.html#github">Box Ctrl</a></th><td>Your label list, and your logo if you've added one.</td></tr>
+        <tr><th scope="row"><a href="https://woodwerd.github.io/tool-ctrl/guide.html#github">Tool Ctrl</a></th><td>Your record of tool boxes and what's in them.</td></tr>
+      </table>
+      <p>Connect one tool or several. Each one is separate: connecting or disconnecting one leaves the others as they are.</p>
+    </section>
+
+    <section id="need"><h2>What you need</h2>
+      <ul class="plain">
+        <li>An email address, for a free GitHub account.</li>
+        <li>A computer, for the setup. Making the repo and token is easier on a big screen.</li>
+        <li>About 10 minutes.</li>
+        <li>Somewhere safe to keep the token, such as your password manager.</li>
+      </ul>
+    </section>
+
+    <section id="account"><h2>1. A GitHub account</h2>
+      <p>Already have one? Sign in and skip to step 2.</p>
+      <ol>
+        <li>Go to <a href="https://github.com/signup">github.com/signup</a>.</li>
+        <li>Enter your email, a password and a username. Your username becomes part of your repo's name, such as <span class="mono">your-name/ctrl-data</span>.</li>
+        <li>Choose the free plan if asked. It's all you need.</li>
+      </ol>
+    </section>
+
+    <section id="repo"><h2>2. Your private repo</h2>
+      <p>Already made one for another WOODWERD tool? Use it, and skip to step 4.</p>
+      <ol>
+        <li>Go to <a href="https://github.com/new">github.com/new</a>. You can also click <b>+</b> at the top right of any GitHub page, then <b>New repository</b>.</li>
+        <li><b>Owner:</b> leave it as your username.</li>
+        <li><b>Repository name:</b> type <span class="mono">ctrl-data</span>, or any name you like with letters, numbers and dashes.</li>
+        <li><b>Visibility:</b> choose <b>Private</b>. This matters: what the tools keep can say what you own and where it is, and some tools won't connect to a public repo.</li>
+        <li>Leave everything else as it is. You don't need a README; the tools write one.</li>
+        <li>Click <b>Create repository</b>.</li>
+      </ol>
+      <p>GitHub now shows a page of setup instructions for programmers. You can ignore all of it. Note the name at the top, such as <span class="mono">your-name/ctrl-data</span>. That's what you type into a tool.</p>
+    </section>
+
+    <section id="token"><h2>3. Your token</h2>
+      <p>GitHub calls this a <b>fine-grained personal access token</b>. It's a long password that only opens the one repo you choose.</p>
+      <ol>
+        <li>Go to <a href="https://github.com/settings/personal-access-tokens/new">github.com/settings/personal-access-tokens/new</a>. You can also get there from your picture at the top right, then <b>Settings</b>, then <b>Developer settings</b> at the bottom of the left side, then <b>Personal access tokens</b>, then <b>Fine-grained tokens</b>, then <b>Generate new token</b>.</li>
+        <li><b>Token name:</b> something you'll recognise, such as <span class="mono">Ctrl tools</span>.</li>
+        <li><b>Expiration:</b> GitHub makes tokens run out. Pick a date about a year away. When it runs out, the tool tells you, and you make a new one the same way.</li>
+        <li><b>Resource owner:</b> leave it as your username.</li>
+        <li><b>Repository access:</b> choose <b>Only select repositories</b>, then pick <span class="mono">ctrl-data</span> from the list.</li>
+        <li><b>Permissions:</b> under <b>Repository permissions</b>, find <b>Contents</b> and set it to <b>Read and write</b>. GitHub adds <b>Metadata</b>, read only, by itself. Leave every other permission as <b>No access</b>.</li>
+        <li>Click <b>Generate token</b>.</li>
+        <li><b>Copy the token now.</b> It starts with <span class="mono">github_pat_</span>. GitHub shows it once and never again. Paste it into your password manager.</li>
+      </ol>
+      <div class="health warn"><b>Treat it like a password</b><span>Anyone with this token can change the files in that one repo. Don't email it or post it. If you lose it, or think someone saw it, make a new one and delete the old one on GitHub. What's in your tools is safe either way.</span></div>
+    </section>
+
+    <section id="connect"><h2>4. Connect a tool</h2>
+      <ol>
+        <li>Open the tool and press <b>Connect to GitHub</b>. Its guide says where the button is.</li>
+        <li><b>Repo:</b> type your username, a slash and the repo's name, such as <span class="mono">your-name/ctrl-data</span>.</li>
+        <li><b>Token:</b> paste the token from step 3.</li>
+        <li>Press <b>Connect</b>.</li>
+      </ol>
+      <p>The tool writes its own file to the repo, and a README that says which tool wrote it. If the repo already holds that tool's file, from another device, the tool asks which to keep before anything changes.</p>
+      <p>For a second tool, do step 4 again with the <b>same repo and the same token</b>. Some tools offer to reuse a repo another tool already connected in the same browser, so there's nothing to paste.</p>
+    </section>
+
+    <section id="phone"><h2>Phones</h2>
+      <p>Some tools are review only on a phone: you can open and search, but changes are made on a bigger screen. A phone like that only reads from GitHub, so it doesn't need a token that can write.</p>
+      <p>For those, make a second token the same way as step 3, with <b>Contents</b> set to <b>Read-only</b>, and use it on the phone. If the phone is lost, nothing in your repo can be changed with it. Each tool's guide says whether its phone view is review only.</p>
+    </section>
+
+    <section id="more"><h2>More devices</h2>
+      <p>Each browser connects on its own, once. On your iPad or another computer, open the tool, press <b>Connect to GitHub</b>, and enter the same repo name and token. Your work arrives.</p>
+      <p>Your token isn't saved anywhere but the browsers you typed it into, which is why you keep it in your password manager. If you've lost it, make a new one in step 3. The old one keeps working until it runs out, unless you delete it on GitHub.</p>
+    </section>
+
+    <section id="fix"><h2>If something goes wrong</h2>
+      <p>The words differ a little from tool to tool. These are the usual causes.</p>
+      <table class="tbl">
+        <tr><th scope="row">The token is refused</th><td>It ran out or was deleted. Make a new one in step 3 and enter it in the tool. Nothing in the tool is lost.</td></tr>
+        <tr><th scope="row">Repo not found</th><td>Check the name is your username, a slash, and the repo name, such as <span class="mono">your-name/ctrl-data</span>. Check the token was made for that repo.</td></tr>
+        <tr><th scope="row">Can't write, or read only</th><td>The token is missing write access. On GitHub, edit the token and set <b>Contents</b> to <b>Read and write</b>. On a review-only phone, read only is expected.</td></tr>
+        <tr><th scope="row">The repo is public</th><td>On GitHub, open the repo, then <b>Settings</b>, and at the bottom change its visibility to <b>Private</b>.</td></tr>
+        <tr><th scope="row">Offline</th><td>No internet. Changes wait in the browser and go when you're back.</td></tr>
+      </table>
+      <p>To stop syncing a tool, press its <b>Disconnect</b>. The token is deleted from that browser for that tool, and your work stays in the browser and on GitHub.</p>
+    </section>
+
+    <section id="words"><h2>Words used here</h2>
+      <table class="tbl">
+        <tr><th scope="row">GitHub</th><td>A website for keeping files, with a history of every change. Free for this.</td></tr>
+        <tr><th scope="row">Repo</th><td>Short for repository: a folder on GitHub. Yours is private, so only you can see it.</td></tr>
+        <tr><th scope="row">Token</th><td>A long password that only opens what you chose when you made it. Some tools call it a key.</td></tr>
+        <tr><th scope="row">Sync</th><td>A tool and GitHub swapping changes, so both have the same copy.</td></tr>
+        <tr><th scope="row">Commit</th><td>One saved change on GitHub. Each sync makes one, which is how GitHub keeps the history.</td></tr>
+      </table>
+    </section>
+
+    <section id="privacy"><h2>Privacy</h2>
+      <p>A connected tool talks only to GitHub, only for your repo, and only after you connect. The token never goes in a file, a link, an export or the repo.</p>
+      <p>Every WOODWERD tool runs from woodwerd.github.io, so the tools you open in the same browser can see each other's saved token. That's how one token serves them all, and it's why the token should open only that one private repo, with Contents and nothing else.</p>
+    </section>
+  </div>
+</div>
+
+<!--FOOTER-->
+</div>
+<script src="chrome.js"></script>
+</body>
+</html>
