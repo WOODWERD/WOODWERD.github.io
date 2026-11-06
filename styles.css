@@ -87,6 +87,7 @@ details.alltools[open]>summary::after{content:"▴";color:var(--accent-text)}
 /* phones: hang the All WOODWERD tools menu from the full-width strip, so it can't run off the left edge */
 @media (max-width:767px){details.alltools,details.kitmenu{position:static}.toolmenu{left:0;right:0;width:auto;max-width:none}}
 @media (max-width:640px){.guide .tbl th{white-space:normal}}
+@media (min-width:821px){.guide nav a{padding-left:8px}.guide nav a[aria-current="location"]{box-shadow:inset 2px 0 0 var(--accent);color:var(--ink);font-weight:500}}
 @media (max-width:820px){.guide{grid-template-columns:minmax(0,1fr)}.guide nav{position:static}.foot{padding-inline:0}}
 
 /* this site only */

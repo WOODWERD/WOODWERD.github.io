@@ -2,6 +2,9 @@
 
 What changed on [WOODWERD Toolkit Guides](https://woodwerd.github.io/), newest first. Versions are x-numbers while the site is new.
 
+## x0.0.3 · 2026-11-06
+- The guide's menu marks the section you're reading with an amber bar.
+
 ## x0.0.2 · 2026-11-06
 - The menu on the left stays in place as you scroll, like the other WOODWERD guides. On phones it stays at the top of the page.
 
