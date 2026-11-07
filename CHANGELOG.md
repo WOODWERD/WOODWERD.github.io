@@ -2,6 +2,10 @@
 
 What changed on [WOODWERD Toolkit Guides](https://woodwerd.github.io/), newest first. Versions are x-numbers while the site is new.
 
+## x0.0.4 · 2026-11-06
+- Set up GitHub no longer says one repo serves every tool. Tools that work together share a repo, and a tool that stands on its own gets its own. Each tool's guide says which.
+- Step 4 now covers a tool with a repo of its own: a new private repo and a token for just that repo.
+
 ## x0.0.3 · 2026-11-06
 - The guide's menu marks the section you're reading with an amber bar.
 

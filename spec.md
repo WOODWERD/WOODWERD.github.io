@@ -10,7 +10,7 @@ Drew, 2026-11-06: the reference for setting up a private GitHub repo "should jus
 | --- | --- |
 | WG-R1 | The site lives at `woodwerd.github.io`, from the public repo `WOODWERD/WOODWERD.github.io`, chosen by Drew 2026-11-06. It is not a tool and isn't listed in All tools. |
 | WG-R2 | A page goes here only when more than one tool needs it. It stays generic. What one tool writes, where its buttons are and its exact messages go in that tool's guide, which the page links to. |
-| WG-R3 | Set up GitHub covers: why, how one repo serves several tools, which tools use it, what you need, a GitHub account, a private repo, a fine-grained token for that repo with Contents read and write only, connecting a tool, a read-only token for review-only phones, more devices, common fixes, words used, and privacy. |
+| WG-R3 | Set up GitHub covers: why, how repos and tools fit together (tools that work together share a repo, a tool that stands alone has its own, and each tool's guide says which), which tools use it, what you need, a GitHub account, a private repo, a fine-grained token for that repo with Contents read and write only, connecting a tool, a read-only token for review-only phones, more devices, common fixes, words used, and privacy. |
 | WG-R4 | Set up GitHub keeps the section anchors of the old Box Ctrl page where the section still exists (`why`, `how`, `need`, `account`, `repo`, `token`, `connect`, `more`, `fix`, `words`), so old links land in the right place. |
 | WG-R5 | Box Ctrl's `github.html` stays as a pointer to this page, carrying the anchor across. Its Box Ctrl-only sections, `tool` and `daily`, go to Box Ctrl's guide. |
 | WG-R6 | A tool joins the Which tools use it table when it is public and syncs, with a link to its guide's GitHub section. Unreleased tools are not listed. |
@@ -25,4 +25,5 @@ Drew, 2026-11-06: the reference for setting up a private GitHub repo "should jus
 | Q2 | Should All tools, in the six places it repeats, gain a link to the guides? | Not yet; the tools' own guides link here |
 
 ## 4. Log
+- **2026-11-06** — x0.0.4: Drew chose that File Ctrl gets its own private repo, set up the same way, so Set up GitHub no longer says one repo serves every tool. Tools that work together, such as Box Ctrl and Tool Ctrl, still share one. Step 4 adds how to set up a tool with a repo of its own.
 - **2026-11-06** — x0.0.1 built, not committed. Set up GitHub rewritten from Box Ctrl's x0.1.4 page as a generic page. Box Ctrl x0.1.8 and Tool Ctrl x0.0.11 point to it.

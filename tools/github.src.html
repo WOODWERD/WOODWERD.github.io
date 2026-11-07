@@ -21,7 +21,7 @@
   <div class="brand">
     <h1>Toolkit Guides</h1>
     <span class="by">Set up GitHub</span>
-    <span class="by mono">· x0.0.3</span>
+    <span class="by mono">· x0.0.4</span>
   </div>
   <div class="leds">
     <a href="./" class="guidelink">All guides</a>
@@ -60,7 +60,7 @@
 
     <section id="how"><h2>How it fits together</h2>
       <figure class="fig">
-        <svg viewBox="0 0 640 250" role="img" aria-label="Your computer, iPad and phone each sync with one private repo on GitHub, which holds one file for each tool you connect, and a README.">
+        <svg viewBox="0 0 640 250" role="img" aria-label="Your computer, iPad and phone each sync with a private repo on GitHub, which holds a file for each tool connected to it, and a README.">
           <g fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="20" y="20" width="150" height="54" rx="8"/><rect x="20" y="98" width="150" height="54" rx="8"/><rect x="20" y="176" width="150" height="54" rx="8"/>
             <rect x="380" y="40" width="240" height="170" rx="13"/>
@@ -75,15 +75,15 @@
           </g>
           <g fill="var(--accent-text)" font-family="Inter, Arial, sans-serif" font-size="12"><text x="232" y="116">sync</text></g>
         </svg>
-        <figcaption class="small">One repo holds everything. Each tool writes its own files and never touches the others.</figcaption>
+        <figcaption class="small">Tools that work together share a repo. Each tool writes its own files and never touches the others.</figcaption>
       </figure>
-      <p>A <b>repo</b> is a folder on GitHub. You make <b>one</b>, and every tool you connect keeps its own file in it. You don't need a repo for each tool.</p>
-      <p>A <b>token</b> is a long password that lets a tool write to that one folder and nothing else in your account. You make <b>one</b>, and every tool can use it.</p>
+      <p>A <b>repo</b> is a folder on GitHub. Tools that work together share one, and each keeps its own file in it. A tool that stands on its own gets a repo of its own. Each tool's guide says which it uses.</p>
+      <p>A <b>token</b> is a long password that lets a tool write to one repo and nothing else in your account. You make one for each repo, and the tools that share that repo share its token.</p>
       <p>After that, each browser you use connects once. From then on, saving to GitHub happens by itself.</p>
     </section>
 
     <section id="tools"><h2>Which tools use it</h2>
-      <p>Each tool's own guide says what it keeps in the repo and where its Connect button is.</p>
+      <p>Each tool's own guide says what it keeps, whether it shares a repo or has its own, and where its Connect button is.</p>
       <table class="tbl">
         <tr><th scope="row"><a href="https://woodwerd.github.io/box-ctrl/guide.html#github">Box Ctrl</a></th><td>Your label list, and your logo if you've added one.</td></tr>
         <tr><th scope="row"><a href="https://woodwerd.github.io/tool-ctrl/guide.html#github">Tool Ctrl</a></th><td>Your record of tool boxes and what's in them.</td></tr>
@@ -145,7 +145,8 @@
         <li>Press <b>Connect</b>.</li>
       </ol>
       <p>The tool writes its own file to the repo, and a README that says which tool wrote it. If the repo already holds that tool's file, from another device, the tool asks which to keep before anything changes.</p>
-      <p>For a second tool, do step 4 again with the <b>same repo and the same token</b>. Some tools offer to reuse a repo another tool already connected in the same browser, so there's nothing to paste.</p>
+      <p>For a tool that shares a repo you've already made, do step 4 again with the <b>same repo and the same token</b>. Some tools offer to reuse a repo another tool already connected in the same browser, so there's nothing to paste.</p>
+      <p>For a tool that has a repo of its own, do steps 2 to 4 again: a new private repo with its own name, and a new token for just that repo.</p>
     </section>
 
     <section id="phone"><h2>Phones</h2>
@@ -182,7 +183,7 @@
 
     <section id="privacy"><h2>Privacy</h2>
       <p>A connected tool talks only to GitHub, only for your repo, and only after you connect. The token never goes in a file, a link, an export or the repo.</p>
-      <p>Every WOODWERD tool runs from woodwerd.github.io, so the tools you open in the same browser can see each other's saved token. That's how one token serves them all, and it's why the token should open only that one private repo, with Contents and nothing else.</p>
+      <p>Every WOODWERD tool runs from woodwerd.github.io, so the tools you open in the same browser can see each other's saved token. That's how tools that share a repo share its token, and it's why every token should open only its own private repo, with Contents and nothing else.</p>
     </section>
   </div>
 </div>
